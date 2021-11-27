@@ -22,9 +22,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 div#root {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* text-align: center; */
   min-width: 320px;
   max-width: 400px;
   margin: 0 auto;
@@ -39,12 +36,6 @@ header {
 }
 h1 {
   color: hsl(227, 35%, 25%);
-}
-/* main */
-main {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
 }
 /* input range slider */
 input[type="range"] {
@@ -71,16 +62,9 @@ input[type="range"]::-webkit-slider-thumb {
 .price-num {
   color: hsl(227, 35%, 25%);
 }
-.price-desktop {
-  display: none;
-}
 .discount {
   background-color: hsl(14, 92%, 95%);
   color: hsl(15, 100%, 70%);
-  font-weight: 700;
-}
-.discount-text {
-  display: none;
 }
 /* info list */
 li {
@@ -103,44 +87,15 @@ li {
 @media (min-width: 768px) {
   div#root {
     min-width: 320px;
-    max-width: 700px;
+    max-width: 600px;
   }
-  .App {
-    min-width: 500px;
+  body {
+    background-size: 100% 72%;
   }
-  .header-text-wrap {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
+  header {
+    background-size: 30%;
   }
-  .price {
-    display: none;
-    align-items: center;
-  }
-  .discount-text {
-    display: inline-block;
-  }
-  .discount {
-    display: flex;
-    gap: 0.5rem;
-  }
-  .price-desktop {
-    display: flex;
-    gap: 0.5rem;
-  }
-  .page-views-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .page-views {
-    margin: 0;
-  }
-  .info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  /* info list */
   .info ul {
     align-items: flex-start;
   }
