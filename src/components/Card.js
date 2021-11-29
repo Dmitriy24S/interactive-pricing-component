@@ -18,9 +18,9 @@ const Card = () => {
   };
 
   return (
-    <main className="py-20 px-12 bg-white flex flex-col shadow-xl rounded-3xl md:py-10 md:px-20">
+    <main className="pt-16 pb-12 px-12 bg-white flex flex-col shadow-xl rounded-3xl md:py-10 md:px-20">
       <div className="page-views-wrap md:flex md:items-center md:justify-between">
-        <div className="page-views text-2xl mb-5  uppercase tracking-widest font-bold md:m-0">
+        <div className="page-views text-xl mb-5  uppercase tracking-widest font-bold md:m-0">
           100K pageviews
         </div>
         <div className="price price-desktop py-10 my-5 flex gap-4 justify-center items-center hidden md:flex md:gap-2">
@@ -39,22 +39,24 @@ const Card = () => {
           ref={rangeRef}
         />
       </div>
-      <div className="price py-10 my-5 flex gap-4 justify-center items-center md:py-0 md:hidden">
+      <div className="price pt-10 my-5 flex gap-4 justify-center items-center md:py-0 md:hidden">
         <span className="price-num text-5xl font-extrabold ">$16.00</span> / month
       </div>
-      <div className="bill-type flex items-center justify-center gap-8 my-3 py-10">
+      <div className="bill-type flex items-center justify-center my-3 py-10">
         <label>
-          Monthly Billing
+          <p id="monthly-billing">Monthly Billing</p>
           <input type="checkbox" role="switch" indeterminate />
-          Yearly Billing
+          <p id="yearly-billing">
+            Yearly Billing
+            <div className="discount font-bold rounded-full  py-1.5 px-3 md:gap-2 md:flex">
+              -25%
+              <span className="discount-text hidden md:inline-block"> discount</span>
+            </div>
+          </p>
         </label>
-        <div className="discount font-bold rounded-full  py-1.5 px-3 md:gap-2 md:flex">
-          -25%
-          <span className="discount-text hidden md:inline-block"> discount</span>
-        </div>
       </div>
       <div className="info border-t md:pt-14 md:pb-5 md:flex md:justify-between md:items-center">
-        <ul className="py-16 flex flex-col gap-4 md:py-0">
+        <ul className="py-16 text-xl	 flex flex-col gap-4 md:py-0">
           <li>
             <img src={check} alt="" />
             Unlimited websites
@@ -68,7 +70,9 @@ const Card = () => {
             Email reports
           </li>
         </ul>
-        <button className="start-trial-btn py-5 px-20 rounded-full ">Start my trial</button>
+        <button className="start-trial-btn text-xl md:text-2xl py-5 px-16 rounded-full ">
+          Start my trial
+        </button>
       </div>
     </main>
   );
