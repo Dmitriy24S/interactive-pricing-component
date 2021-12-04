@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Interactive pricing component
+
+![Design preview for Interactive pricing component](./design/desktop-preview.jpg)
+
+## Welcome 
+
+Interactive pricing component. Created with React, Tailwind CSS & CSS.
+
+[Live Demo](https://dmitriy24s.github.io/interactive-pricing-component/) 👈
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
